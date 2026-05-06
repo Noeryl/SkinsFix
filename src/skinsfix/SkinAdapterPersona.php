@@ -2,13 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace skinsfix\skin;
+namespace skinsfix;
 
 use pocketmine\network\mcpe\convert\LegacySkinAdapter;
 use pocketmine\network\mcpe\protocol\types\skin\SkinData;
 use pocketmine\entity\Skin;
 use pocketmine\entity\InvalidSkinException;
-use skinsfix\SkinsFix;
 use function explode;
 use function is_array;
 use function is_string;

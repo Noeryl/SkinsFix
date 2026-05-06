@@ -4,12 +4,11 @@ declare(strict_types = 1);
 
 namespace skinsfix;
 
-use pocketmine\entity\Skin;
-use pocketmine\network\mcpe\convert\TypeConverter;
 use pocketmine\plugin\PluginBase;
+use pocketmine\entity\Skin;
 use pocketmine\utils\SingletonTrait;
+use pocketmine\network\mcpe\convert\TypeConverter;
 use Ramsey\Uuid\Uuid;
-use skinsfix\skin\SkinAdapterPersona;
 use function chr;
 use function imagecolorat;
 use function imagecreatefrompng;

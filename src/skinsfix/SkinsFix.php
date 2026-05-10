@@ -21,12 +21,13 @@ final class SkinsFix extends PluginBase{
 
     protected function onLoad() : void{
         self::setInstance($this);
+        $this->saveResource("steve.png");
 
         TypeConverter::getInstance()->setSkinAdapter(new SkinAdapterPersona());
     }
 
     public function getSteveSkin(string $capeData) : Skin{
-        $image = imagecreatefrompng($this->getResourceFolder(). "steve.png");
+        $image = imagecreatefrompng($this->getDataFolder(). "steve.png");
 
         $skinData = "";
         for($y = 0; $y < imagesy($image); $y++){
